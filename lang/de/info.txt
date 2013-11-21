@@ -1,0 +1,3 @@
+====== Ihr Passwort ist abgelaufen ======
+
+Ihr Active Directory Passwort ist kürzlich abgelaufen. Sie müssen ein neues Passwort an einem Computer setzen welcher in Ihrer Active Directory Domäne ist.

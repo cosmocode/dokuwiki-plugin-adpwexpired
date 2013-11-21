@@ -1,0 +1,3 @@
+====== Your Password expired ======
+
+Your Active Directory password expired recently. You need to reset it using a computer that is member of your Active Directory domain.
