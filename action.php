@@ -31,6 +31,7 @@ class action_plugin_adpwexpired extends DokuWiki_Action_Plugin {
      */
 
     public function handle_loginform(Doku_Event &$event, $param) {
+        /** @var DokuWiki_Auth_Plugin $auth*/
         global $auth;
         if(empty($_REQUEST['u'])) return; // not a login attempt
         $user = $_REQUEST['u'];
