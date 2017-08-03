@@ -1,7 +1,7 @@
 base   adpwexpired
 author Andreas Gohr
 email  andi@splitbrain.org
-date   2013-11-21
+date   2017-08-02
 name   adpwexpired plugin
 desc   Show info about expired password
 url    http://www.cosmocode.de

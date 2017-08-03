@@ -17,10 +17,8 @@ class action_plugin_adpwexpired extends DokuWiki_Action_Plugin {
      * @param Doku_Event_Handler $controller DokuWiki's event controller object
      * @return void
      */
-    public function register(Doku_Event_Handler &$controller) {
-
+    public function register(Doku_Event_Handler $controller) {
        $controller->register_hook('HTML_LOGINFORM_OUTPUT', 'BEFORE', $this, 'handle_loginform');
-   
     }
 
     /**
@@ -33,6 +31,7 @@ class action_plugin_adpwexpired extends DokuWiki_Action_Plugin {
      */
 
     public function handle_loginform(Doku_Event &$event, $param) {
+        /** @var DokuWiki_Auth_Plugin $auth*/
         global $auth;
         if(empty($_REQUEST['u'])) return; // not a login attempt
         $user = $_REQUEST['u'];
